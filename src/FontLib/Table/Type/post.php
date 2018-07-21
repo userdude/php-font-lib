@@ -56,7 +56,7 @@ class post extends Table {
           if ($index < 258) {
             $names[$g] = File::$macCharNames[$index];
           }
-          else {
+          elseif(isset($namesPascal[$index - 258])) {
             $names[$g] = $namesPascal[$index - 258];
           }
         }
